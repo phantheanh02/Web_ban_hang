@@ -1,0 +1,1330 @@
+body 
+    font-family: $R
+    font-size: 15px
+    color: #000
+    line-height: 150%
+    font-weight: 400
+
+h1, h2, h3, h4, h5, h6
+    font-weight: 700
+    font-family: $RC
+    line-height: 150%
+
+.topbar
+    font-size: 12px
+    color: $textColor
+    background: #f2f2f2    
+.hotline
+    margin-top: 5px
+    .hotline-icon
+        width: 22px
+        height: 15px 
+        @include iconBackground(-14px, -20px, left, 5px)
+    span 
+        margin-top: 4px
+        display: block
+        line-height: 100%
+.topbar-right
+    ul 
+        margin: 2px 0 0
+        li 
+            padding: 2px 10px 
+            border-right: 1px solid $textColor
+            line-height: 100%
+            &:last-child 
+                border-right: 0
+    a 
+        color: $textColor
+        &:hover 
+            text-decoration: none 
+            color: $red
+.social
+    margin: 0 0 0 20px
+    li 
+        border: none!important
+        padding: 0!important
+        a
+            width: 20px 
+            height: 20px
+            background: #2E4DA7
+            color: #fff
+            border-radius: 100%
+            padding: 2px
+            text-align: center
+            i 
+                font-size: 12px 
+                line-height: 12px
+                width: 20px 
+                height: 20px
+            &:hover 
+                color: #fff 
+                background: $green!important
+        &:nth-child(2)
+            a 
+                background: #D1333B
+        &:nth-child(3)
+            a 
+                background: #E52723
+        &:nth-child(4)
+            a 
+                background: #1191DF
+        &:nth-child(5)
+            a 
+                background: #ED7527
+.switch
+    font-weight: 700
+    .active, &:hover 
+        color: $red
+        .live-icon
+            
+    .live-icon
+        margin-top: -2px
+        width: 14px 
+        height: 12px
+        
+    .radio-icon
+        width: 15px
+        height: 12px
+        
+
+.logo-wrapper
+    .logo 
+        position: absolute
+        top: 15px
+        left: 0
+        z-index: 10
+
+.top-navigation
+    background: $green
+    .main-menu 
+        ul 
+            margin: 0
+        margin: 0
+        .home-icon
+            width: 21px
+            height: 18px
+            margin-top: -5px
+            @include iconBackground(-213px, -16px, left, 0)
+        li
+            float: left
+            background-color: $green
+            transition: all 250ms linear 0s
+            padding: 0
+            a 
+                color: #fff
+                font-weight: 700
+                font-family: $RC
+                font-size: 16px
+                text-transform: uppercase
+                display: block
+                padding: 21px 15px 15px
+                line-height: 100%
+                height: 100%
+                border-bottom: 6px solid transparent
+                &:hover 
+                    text-decoration: none
+                    @include menuHover()  
+            &:last-child 
+                float: right
+                &:hover 
+                    border: none 
+                    background-color: $green
+            .active 
+                @include menuHover()   
+        .has-child 
+            position: relative
+            display: block
+            .child-menu
+                display: none
+                list-style: none
+                position: absolute
+                top: 100%
+                left: 0
+                width: 100% 
+                height: auto 
+                padding: 0
+                z-index: 10
+                background-color: $green
+                min-width: 250px
+                li 
+                    float: left 
+                    width: 100%
+                    height: auto
+                    background-color: $green
+                    a 
+                        border: none
+                        font-size: 17px
+                        text-transform: none
+                        padding: 12px 15px
+                        &:after 
+                            content: none
+                .has-child
+                    position: relative
+                    .child-menu
+                        left: 100%!important
+                        top: 0
+                    &:before
+                        content: '\f105'
+                        font-family: "FontAwesome"
+                        display: block
+                        font-size: 18px
+                        color: #fff
+                        position: absolute
+                        right: 8px
+                        top: 8px
+                &:hover > .has-child
+                    display: block
+
+            &:hover > .child-menu
+                display: block
+.breadcrumbs-bar
+    height: 48px
+    overflow: hidden
+    margin-bottom: 15px
+    .breadcrumbs-title
+        color: $red
+        font-size: 16px
+        background: #fff 
+        position: absolute
+        top: 0
+        left: 0
+        height: 48px
+        margin: 0
+        padding: 17px 10px 0 0
+        z-index: 5
+    marquee
+        margin-top: 15px
+        a 
+            color: $textColor 
+            font-size: 15px  
+            margin-right: 30px 
+            line-height: 100%
+            display: inline-block
+            &:hover 
+                color: $red
+                text-decoration: none
+            i 
+                color: $red
+                font-size: 6px
+                position: relative
+                top: -2px
+                &:nth-child(2)
+                    font-size: 10px
+    .breadcrumbs-weather-time 
+        font-size: 15px
+    .box-weather
+        margin-top: 15px
+        .box-weather-title
+            color: $boldTextColor
+            margin-right: 15px
+        img 
+            margin-right: 7px
+            margin-top: -6px
+        .box-weather-temp
+            color: $red
+            font-weight: 700
+            font-size: 20px
+            i 
+                color: $boldTextColor 
+                text-transform: uppercase
+                font-style: normal
+                position: absolute
+                top: -5px
+    .box-time
+        margin-top: 15px
+        font-size: 14px
+        padding-left: 0
+.block-gray 
+    background: #f2f2f2
+    .breadcrumbs-title  
+        background: none
+        a   
+            color: $red
+
+.home-block-top
+    padding-top: 0
+    .home-block-top-navigation
+        ul  
+            margin: 0
+            float: left
+            padding: 15px 0
+            li 
+                margin-right: 10px
+            a 
+                font-size: 19px 
+                font-family: $RC
+                color: #bfbfbf
+                &:hover 
+                    text-decoration: none
+                    color: $red
+                .live-icon
+                    width: 18px
+                    height: 16px
+                    margin-top: 1px
+                    @include iconBackground(-265px, -66px, left, 8px)
+                .radio-icon
+                    width: 18px
+                    height: 15px
+                    margin-top: 5px
+                    @include iconBackground(-17px, -118px, left, 8px)
+            .active 
+                color: $boldTextColor
+.home-block
+    padding: 15px 0
+
+.video-player-wrapper
+    .video-player-title
+        font-size: 14px           
+        color: #fff
+        background-color: $boldTextColor
+        height: 34px
+        .video-player-tag
+            background-color: $green  
+            padding: 10px 15px
+        span 
+            float: left
+            line-height: 100%
+        .video-player-title-text
+            margin-top: 11px
+            margin-left: 10px
+            white-space: nowrap
+            text-overflow: ellipsis
+            overflow: hidden
+            font-size: 13px
+        .video-player-title-texts 
+            @extend .video-player-title-text
+
+.featured-news-wrapper
+    background-color: #fff
+    padding: 10px 10px 5px 10px
+.featured-news-top-side
+    .featured-news-top-side-title
+        margin-top: 0
+        border-bottom: 1px solid #d0d0d0
+        padding-bottom: 5px
+        font-size: 18px
+        position: relative
+        &:after 
+            content: ""
+            display: block 
+            height: 1px 
+            position: absolute
+            width: 105px 
+            background-color: $red
+            z-index: 1
+            left: 0 
+            bottom: -1px
+.featured-news-top-item
+    position: relative
+    margin-bottom: 10px
+    img 
+        width: 100%
+    a 
+        line-height: 100%
+    .featured-news-top-item-title
+        position: absolute
+        bottom: 0 
+        left: 0 
+        font-size: 13px 
+        font-weight: 500
+        padding: 5px
+        color: #fff
+        background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%)
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%)
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#66000000',GradientType=0 )
+        &:hover 
+            text-decoration: none
+            background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%)
+            background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 100%)
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 100%)
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b3000000',GradientType=0 )
+.featured-news-top-side
+    height: 100%
+    padding: 0 10px            
+.featured-news-top-side-list-news
+    li 
+        border-bottom: 1px solid #e7e7e7
+        text-align: justify
+        a 
+            padding: 5px 0 5px 15px
+            font-size: 15px
+            line-height: 150%
+            color: $textColor
+            &:hover 
+                color: $red 
+                background: none
+        i 
+            font-size: 5px
+            position: absolute
+            top: 13px
+            left: 0
+            color: $red 
+.home-block-top
+    .block-title
+        span 
+            background: #f2f2f2
+
+.block-title
+    height: 29px 
+    margin: 20px 0
+    position: relative
+    span 
+        //display: inline-block
+        padding: 3px 15px 6px 0
+        position: relative
+        z-index: 10
+        background: transparent
+        width: 100%
+        a 
+            color: #fff
+            &:hover 
+                text-decoration: none
+    &:after
+        content: ""
+        top: 0
+        left: 0
+        display: block
+        width: 100%
+        height: 31px
+        position: absolute
+        background: url(../images/title-line-bg.png) top left transparent
+    .carousel-next, .carousel-prev 
+        width: 31px
+        height: 31px
+        position: relative
+        z-index: 10
+        float: right
+        background-color: #f2f2f2
+        color: $textColor
+        padding: 2px 10px
+        &:hover 
+            background: $red
+            color: #fff
+    i 
+        margin-right: 5px 
+
+.video-item-horizontal
+    margin-bottom: 10px
+    .video-item-title
+        padding: 0 7px
+        font-size: 15px
+        a
+            color: $textColor
+            &:hover 
+                color: $red
+                text-decoration: none
+    .hover-icon
+        @include hoverIcon(#fff, 20px, 18px, 20px)
+    &:hover 
+        .hover-icon 
+            display: block
+.video-item
+    .video-item-time
+        position: absolute
+        bottom: 5px
+        left: 0 
+        z-index: 2
+        color: #fff 
+        i 
+            background: $green
+            font-size: 15px
+            padding: 11px 13px
+            float: left
+            transition: all 300ms linear 0s
+        span 
+            background: rgba(0,0,76,.75)
+            float: left
+            padding: 7.7px 4px
+            font-size: 13px
+    .video-item-title
+        font-weight: 500
+        float: left
+        margin-top: 10px
+        height: 45px 
+        overflow: hidden
+        a
+            color: $boldTextColor
+            font-size: 15px
+            overflow: hidden 
+            height: 40px
+            &:hover 
+                color: $red 
+                text-decoration: none
+    .hover-icon 
+        @include hoverIcon(#fff, 35px, 30px, 35px)
+    &:hover 
+        .hover-icon
+            display: block
+        .video-item-time
+            i 
+                background: $red
+
+.main-content 
+    padding-top: 0
+
+.folk-tv-wrapper
+    margin-bottom: 20px
+    .folk-tv-title
+        margin: 0 
+        padding: 50px 15px 6px
+        font-size: 19px
+        color: $green
+        -webkit-text-stroke: -2px #fff
+    .folk-tv-list
+        background: #e8ffe8
+        border: 1px solid $green
+        .nav-tabs
+            background: $green
+            li 
+                padding: 5px
+                margin: 0
+                height: 100%
+                a 
+                    text-transform: uppercase
+                    font-size: 13px
+                    font-weight: 500
+                    color: #fff 
+                    border: none
+                    border-radius: 0
+                    padding: 3px 6px
+                    border-radius: 4px
+                    &:hover 
+                        background: $darkGreen
+            .active 
+                a 
+                    background: $darkGreen
+    .folk-tv-item
+        padding: 15px
+    .folk-tv-item-featured
+        .hover-icon
+            font-size: 50px
+    .folk-tv-view-more
+        font-size: 13px
+        a 
+            color: $textColor
+            &:hover 
+                color: $red
+                text-decoration: none
+
+.block-news-item
+    margin-bottom: 14px
+    .block-news-item-title
+        float: left
+        font-size: 14px 
+        font-family: $R
+    a 
+        color: inherit
+        &:hover 
+            text-decoration: none 
+            color: $red
+    .block-news-item-thumbnail
+        img 
+            width: 100%
+        .block-news-item-tag
+            font-family: $RC 
+            font-size: 14px
+            color: #fff 
+            background: $green 
+            padding: 8px
+            text-transform: uppercase
+            position: absolute
+            left: -5px 
+            bottom: 10px
+            z-index: 5
+            &:before 
+                content: ""
+                display: block 
+                position: absolute
+                @include generateTriangular(5px, $green)
+                bottom: -5px 
+                left: 0
+                z-index: 5
+    .block-news-item-list
+        padding-left: 0
+        li
+            border-bottom: 1px solid #e7e7e7
+            &:last-child 
+                border-bottom: none
+            a 
+                color: $textColor 
+                font-size: 15px
+                padding-left: 0
+                line-height: 21px
+                &:hover 
+                    background-color: transparent 
+                    color: $red
+.submain-content-right
+    ul 
+        li 
+            width: 50%
+            a 
+                text-transform: uppercase
+                font-size: 12px
+                padding: 5px 2px
+                border: none!important 
+                margin: 0
+                display: block
+                text-align: center
+                color: #a4a4a4
+                border-radius: 0
+                background-color: #00004c
+                font-family: $RC
+                &:hover 
+                    color: #fff!important
+                    background-color: #6e0056!important
+        .active
+            a 
+                background-color: #6e0056
+                color: #fff
+
+.simple-entry-wrapper
+    background-color: #f2f2f2
+    .simple-entry-item
+        margin: 7px 0
+        border-bottom: 1px solid #d7d7d7
+        .simple-entry-thumbnail, .simple-entry-title
+            padding: 0 10px
+        &:last-child 
+            border: none
+    .simple-entry-title
+        font-size: 15px
+        font-weight: 500
+        font-family: $R
+        height: 42px 
+        overflow: hidden
+        a   
+            color: $boldTextColor
+            &:hover 
+                color: $red
+                text-decoration: none
+.red-tag
+    background: #cf0000!important
+    color: #fff
+    padding-left: 10px!important
+.blue-tag
+    background: #232087 !important
+    color: #fff
+    padding-left: 10px!important
+.sidebar-item
+    margin: 20px 0 0
+.sidebar 
+    .adversiment
+        img 
+            width: 100%         
+.block-tv
+    .block-tv-program-title
+        margin: 0 
+        padding: 7px 15px
+        border: 1px solid #e7e7e7
+        border-bottom: none
+        font-size: 15px
+    .block-tv-title
+        border-bottom: 1px solid #e7e7e7
+        position: relative
+        padding-bottom: 10px 
+        &:after 
+            content: ""
+            display: block 
+            position: absolute
+            width: 170px 
+            height: 1px
+            bottom: -1px 
+            left: 0
+            z-index: 5
+            background-color: $red
+    .block-tv-list
+        padding: 7px 15px  
+        border: 1px solid #e7e7e7
+        font-size: 15px      
+        i 
+            color: $red
+            margin-right: 10px
+        a 
+            color: inherit
+            &:hover 
+                text-decoration: none 
+                color: $red
+        &:first-child 
+            border-bottom: none
+.block-schedule
+    .block-title
+        margin: 0
+    .nav-tabs
+        display: flex
+        justify-content: space-between
+        li
+            width: 100%
+            a
+                padding: 0
+                .block-title
+                    height: unset
+                    font-size: 15px
+.block-schedule-list-wrapper
+    background-color: #f2f2f2
+    padding: 20px
+    .block-schedule-list-title
+        margin-bottom: 15px
+    .block-schedule-list-item
+        margin-bottom: 15px
+    .block-schedule-list-item-time
+        padding-left: 0
+        color: #000 
+    .block-schedule-list-item-program-name
+        color: #393939
+        font-weight: 400
+        text-transform: none
+        line-height: 150%
+        span 
+            font-weight: 600
+            padding-right: 5px
+
+.block-entertaiment-headline
+    &:after 
+        width: 60px!important
+
+.block-tv-wrapper
+    img 
+        width: 100% 
+    .block-entertaiment-title
+        margin: 0 
+        background: $green 
+        padding: 7px 15px
+        font-size: 15px
+        transition: all 300ms linear 0s
+        a
+            color: #fff 
+            &:hover 
+                text-decoration: none 
+        &:hover        
+            background-color: $darkGreen 
+            
+.block-mostview-title
+    &:after 
+        width: 110px!important
+    a 
+        color: inherit 
+        &:hover 
+            color: $red
+            text-decoration: none
+
+.block-mostview-wrapper
+    padding: 15px 
+    background-color: #f2f2f2
+    .block-mostview-item
+        margin-bottom: 7px
+        border-bottom: 1px solid #c9c9c9
+        padding: 7px 0
+        .block-mostview-order-list
+            color: #fff
+            background-color: #8d8d8d
+            font-size: 20px
+            font-weight: 700
+            border-radius: 100%
+            padding: 7px 12px
+            width: 35px
+            height: 35px
+        &:nth-child(1)
+            .block-mostview-order-list
+                background-color: #cf0000
+        &:nth-child(2)
+            .block-mostview-order-list
+                background-color: $green 
+        &:nth-child(3)
+            .block-mostview-order-list
+                background-color: #00004c
+        &:nth-child(4)
+            .block-mostview-order-list
+                background-color: #6e0056
+        &:last-child 
+            border-bottom: none
+    .block-mostview-title
+        color: #000
+        font-weight: 500   
+        padding-right: 0     
+
+.middle-content
+    .block-title 
+        span 
+            background: #f2f2f2
+    .sidebar
+        margin-top: 0
+        .sidebar-clip-wrapper
+            ul 
+                li 
+                    border-bottom: 1px solid #c9c9c9
+                    font-size: 15px
+                    a 
+                        color: #000
+                        padding: 5px 0 5px 30px
+                        &:hover 
+                            text-decoration: none
+                            color: $red
+                            background: none
+                    i 
+                        color: $red        
+                        position: absolute
+                        top: 8px
+                        left: 0
+                    &:last-child 
+                        border: none
+
+.block-sidebar-list-new
+    .block-tv-list
+        padding: 7px 0
+        border: none
+        border-bottom: 1px solid #e7e7e7
+        &:last-child 
+            border: none
+
+.bottom-content
+    .block-title 
+        span 
+            background: #fff
+    .sidebar
+        margin-top: 0
+
+.reporting-block
+    .block-title 
+        padding: 0
+        span 
+            background: $green
+            color: #fff
+            padding-left: 10px                        
+
+.footer-content 
+    .block-title 
+        span 
+            background: #f2f2f2
+
+.reporting-block-wrapper            
+    .video-item-horizontal
+        .row 
+            background: #fafafa
+    .folk-tv-view-more 
+        float: right 
+        a 
+            color: $boldTextColor
+            font-size: 14px
+    .video-item-title
+        padding-top: 4px
+    .reporting-block-featured-title
+        color: #fff 
+        background-color: rgba(0,119,0,.8)
+        display: inline-block 
+        text-transform: uppercase
+        position: absolute
+        bottom: 0
+        left: 0
+        padding: 10px
+        margin-bottom: 0
+        transition: all 300ms linear 0s
+        width: 100%
+        &:hover 
+            background-color: $darkGreen
+    .folk-tv-item-featured
+        .hover-icon
+            font-size: 60px
+
+.footer
+    .menu-footer
+        background: $green
+        overflow: hidden
+        ul 
+            margin: 0
+            li 
+                margin-right: 15px
+                padding: 10px 0
+                &:last-child 
+                    a 
+                        border-right: 0
+                a 
+                    color: #fff
+                    font-size: 16px
+                    font-weight: 600
+                    border-right: 1px solid #fff
+                    padding-right: 10px
+                    display: block
+                    &:hover 
+                        text-decoration: none 
+                        color: #b5b5b5
+    .right-menu
+        color: #fff 
+        font-size: 16px 
+        font-weight: 600
+        padding-top: 10px 
+        span 
+            margin-right: 13px
+
+.footer-copyright 
+    background: #f2f2f2
+    padding: 20px 0
+    .right-copyright
+        select 
+            margin-bottom: 15px
+            border: none 
+            border-radius: 0
+            float: right
+
+.green-block-title 
+    color: #fff
+    span
+        background: $green!important
+        padding-left: 5px
+.live-side-list-wapper
+    border: 1px solid #e4e4ee
+    .video-item-horizontal
+        border-bottom: 1px solid #e4e4ee 
+        margin: 0
+        padding: 15px 15px 0 15px
+        &:last-child 
+            border-bottom: 0
+        .video-item-title
+            font-weight: 500
+            height: 41px 
+            overflow: hidden
+        .row 
+            margin-bottom: 15px
+.breadcrumb
+    padding: 17px 0 17px 85px 
+    background: none
+    li 
+        color: #4d4d4d
+        a 
+            color: #4d4d4d
+.breadcrumb>li+li:before
+    content: "\f105" 
+    font-family: 'FontAwesome' 
+    color: #4d4d4d          
+
+.no-hightline
+    color: #000
+    &:after 
+        background: none    
+    span 
+        background: none!important
+        padding-left: 0
+        border-bottom: 1px solid $red
+    
+.video-title
+    color: $green 
+    font-weight: 700
+    h1
+        font-size: 24px
+        margin: 5px 0
+.video-item
+    .video-item-thumbnail 
+        img 
+            width: 100%
+            min-height: 134px
+
+.featured-category-item
+    .video-item-title
+        a 
+            font-size: 20px  
+            font-weight: 700
+            font-family: $RC
+    .video-item-description
+        font-size: 15px        
+
+.break-block
+    background: url(../images/title-line-bg.png) top left transparent
+    height: 20px
+
+.category-wrapper-list
+    .category-wrapper-list-item
+        border-bottom: 1px solid #e3e3e3
+        padding-bottom: 15px
+        &:last-child 
+            border: none
+    .category-wrapper-list-item-title
+        margin-top: 10px
+        margin-bottom: 15px
+        line-height: 18px
+        a 
+            font-size: 18px
+            color: #000    
+            &:hover 
+                color: $red 
+                text-decoration: none
+    .category-wrapper-list-item-content
+        .category-wrapper-list-item-cat
+            color: #555555
+            font-weight: 500
+            margin-bottom: 8px
+            margin-right: 20px
+            font-size: 15px
+            &:hover 
+                color: $red 
+                text-decoration: none
+        .category-wrapper-list-item-time
+            font-size: 14px
+    .category-wrapper-list-item-desc
+        font-size: 15px
+.category-folk-tv > div 
+    padding: 15px 
+.category-folk-tv-title
+    margin-top: 0
+    border-bottom: 1px solid #d0d0d0
+    padding-bottom: 5px
+    font-size: 18px
+    margin-top: 7px
+    position: relative
+    &:after 
+        content: ""
+        display: block
+        height: 1px
+        position: absolute
+        width: 105px
+        background-color: #e60000
+        z-index: 1
+        left: 0
+        bottom: -1px
+.post-content-title
+    font-size: 25px
+    line-height: 25px
+    margin-top: 0
+.post-content-excerpt        
+    margin: 15px 0 10px
+    font-weight: 500
+    font-size: 15px
+
+.post-content-related-post
+    ul 
+        padding: 0
+        li 
+            a 
+                padding: 0 
+                color: #3a3a3a
+                font-weight: 500
+                &:hover 
+                    background: none
+                    text-decoration: underline
+                i 
+                    font-size: 9px
+                    margin-right: 10px
+            &:nth-child(1)
+                i 
+                    color: $green 
+            &:nth-child(2)
+                i 
+                    color: $red
+.post-content-content                    
+    margin: 15px 0
+    img 
+        max-width: 100%
+        height: auto
+    a 
+        color: $green
+    video 
+        width: 100%
+        height: auto
+        display: block
+    table 
+        td 
+            padding: 15px
+    iframe 
+        max-width: 100%!important
+.post-content-tag
+    margin-bottom: 20px
+    .tags-title
+        font-size: 17px
+    a 
+        color: #ccc
+        margin: 0 2px
+.comment-box
+    textarea
+        padding: 20px 
+        background: #f7f7f7
+    .comment-check
+        margin-left: 10px
+        &:first-child 
+            margin-left: 0
+    .comment-active 
+        color: $red
+    p 
+        margin-top: 15px
+        color: #888
+        font-weight: 500
+        font-size: 16px
+        .comment-active 
+            color: $red
+    .box-title
+        color: $green
+    .comment-button
+        float: right 
+        i 
+            margin-right: 5px
+        border-radius: 0
+        font-weight: 500
+        font-size: 16px
+.view-by-date
+    position: relative 
+    z-index: 100
+    label 
+        font-weight: 300
+        font-size: 14px
+        margin-right: 10px
+        color: #282828
+    .form-group
+        margin-right: 5px  
+    button 
+        background: $red 
+        border-radius: 0
+        box-shadow: none 
+        border: none
+.home-breadcrumb
+    margin-bottom: 0        
+.related-category-title
+    margin-top: 0
+    font-size: 25px 
+    line-height: 25px    
+.page-contact
+    .form-control
+        width: 
+    textarea 
+        resize: none 
+    .parsley-error
+        border: 1px solid $red   
+.parsley-errors-list
+    float: left
+    width: 66%
+    margin-left: 33%
+    padding-left: 15px
+    margin-bottom: 0
+    li 
+        font-size: 12px 
+        color: $red
+.schedule-wrapper
+    ul 
+        background: $green
+        li 
+            a    
+                color: #fff!important   
+                &:hover, &:visited, &:focus, &:active
+                    background: #25a325
+                    border-color: #25a325
+                    border-radius: 0
+        .active 
+            a 
+                background: #25a325!important
+                border-color: #25a325!important
+                border-radius: 0!important
+.comment-name
+    color: #D1333B!important
+    span 
+        color: #555
+    .comment-time
+        font-size: 13px   
+.comment-content
+    color: #222 
+    font-size: 13px                  
+.pagination
+    li 
+        a 
+    .active 
+        span 
+            background: $green    
+
+.audio-wrapper
+    margin: 30px 0
+
+.audio-item
+    padding: 15px 
+    background: #f7f7f7
+    li 
+        background: #fff 
+        padding: 10px
+        margin: 20px 0
+        list-style: none
+        a 
+            color: #222
+        &:hover, &:focus 
+            background: $green 
+            text-decoration: none
+            a 
+                color: #fff
+    .active 
+        background: $green
+        a  
+            color: #fff!important
+            &:focus 
+                color: #fff 
+                text-decoration: none
+.player-wrapper
+    .player-title 
+        margin-top: 0 
+        color: $green
+
+.audio-category-list
+    li 
+        list-style: none
+        padding: 5px 0 
+        a 
+            color: #222
+            &:hover 
+                color: $green
+        .active  
+            color: $red
+            position: relative  
+            &:after 
+                content: '\f04b'
+                display: inline-block
+                font: normal normal normal 14px/1 FontAwesome
+                font-size: inherit
+                text-rendering: auto
+                position: absolute
+                top: 2px
+                left: -19px
+.player-content-wrapper
+    background: #4c4c4c
+    color: #fff
+
+.media-wrapper
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+
+.player-detail
+    padding: 15px
+
+.mejs__container
+    background: transparent!important
+
+.search-desktop-icon
+    float: right!important
+
+.page-contact-map
+    margin-top: 30px    
+
+.live-sidebar
+    width: 100%!important
+
+.rss-wrapper
+    padding: 20px 0
+    h1  
+        font-size: 20px
+        margin-top: 0
+    .rss-content
+        font-size: 14px
+    .rss-list
+        li  
+            display: block
+            float: left
+            clear: both
+            width: 100%
+            a   
+                font-size: 12px
+                color: #222
+                float: left
+                padding: 2px 0 2px
+                &:hover 
+                    background-color: none
+                img  
+                    margin-top: 3px 
+                    margin-right: 10px
+.post-gallery-warpper
+    img
+        width: auto!important 
+        margin: 0 auto                   
+.cse .gsc-search-button-v2, .gsc-search-button-v2
+    display: none!important
+.gsst_a .gscb_a
+    display: none!important
+.cse table.gsc-search-box td.gsc-input, table.gsc-search-box td.gsc-input
+    padding-right: 0!important
+form.gsc-search-box, table.gsc-search-box
+    margin-bottom: 0!important 
+
+.video-js .vjs-menu-button-inline.vjs-slider-active,.video-js .vjs-menu-button-inline:focus,.video-js .vjs-menu-button-inline:hover,.video-js.vjs-no-flex .vjs-menu-button-inline 
+    width: 10em
+
+
+.video-js .vjs-controls-disabled .vjs-big-play-button 
+    display: none!important
+
+
+.video-js .vjs-control 
+    width: 3em
+
+
+.video-js .vjs-menu-button-inline:before 
+    width: 1.5em
+
+
+.vjs-menu-button-inline .vjs-menu 
+    left: 3em
+
+.video-js .vjs-big-play-button
+    top: 50%!important
+    left: 50%!important
+
+.vjs-paused.vjs-has-started.video-js .vjs-big-play-button,.video-js.vjs-ended .vjs-big-play-button,.video-js.vjs-paused .vjs-big-play-button 
+    display: block
+
+
+.video-js .vjs-load-progress div,.vjs-seeking .vjs-big-play-button,.vjs-waiting .vjs-big-play-button 
+    display: none!important
+
+
+.video-js .vjs-mouse-display:after,.video-js .vjs-play-progress:after 
+    padding: 0 .4em .3em
+
+
+.video-js.vjs-ended .vjs-loading-spinner 
+    display: none
+
+
+.video-js.vjs-ended .vjs-big-play-button 
+    display: block !important
+
+
+video-js.vjs-ended .vjs-big-play-button,.video-js.vjs-paused .vjs-big-play-button,.vjs-paused.vjs-has-started.video-js .vjs-big-play-button 
+    display: block
+
+
+.video-js .vjs-big-play-button 
+    top: 50%
+    left: 50%
+    margin-left: -1.5em
+    margin-top: -1em
+
+
+.video-js .vjs-big-play-button 
+    background-color: rgba(0,0,0,0.5)
+    font-size: 2.5em
+    border-radius: 20%
+    height: 1.4em !important
+    line-height: 1.4em !important
+    margin-top: -0.7em !important
+
+
+.video-js:hover .vjs-big-play-button,.video-js .vjs-big-play-button:focus,.video-js .vjs-big-play-button:active 
+    background-color: #cc181e
+
+
+.video-js .vjs-loading-spinner 
+    border-color: #cc181e
+
+
+.video-js .vjs-control-bar2 
+    background-color: #000000
+
+
+.video-js .vjs-control-bar 
+    background-color: rgba(0,0,0,0.3) !important
+    color: #ffffff
+    font-size: 12px
+
+
+.video-js .vjs-play-progress,.video-js  .vjs-volume-level 
+    background-color: #cc181e
+
+
+.video-js .vjs-load-progress 
+    background: rgba(255,255,255,0.3)
+
+input.gsc-input
+    background: none!important
+    text-indent:

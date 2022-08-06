@@ -1,0 +1,117 @@
+@media screen and (min-width: 992px)
+    .main-menu
+        li 
+            &:first-child 
+                height: 58px
+                a 
+                    &:after 
+                        display: none
+            &:last-child, &:nth-last-child(2)
+                a 
+                    &:after 
+                        display: none
+
+            a 
+                position: relative
+                &:after 
+                    content: ""
+                    display: block 
+                    position: absolute
+                    top: 20px
+                    right: 0
+                    width: 2px 
+                    height: 20px
+                    z-index: 5
+                    background-color: #fff
+            &:last-child
+                float: right
+    .video-player-title-text
+        max-width: 440px
+    .box-weather
+        padding-left: 20px
+    .home-video-player-wrapper
+        width: 56%
+    .featured-news-wrapper
+        width: 43%
+    .featured-news-top-side-list-news
+        height: 320px
+    .block-schedule-list
+        height: 230px
+        overflow: hidden
+    .home-sidebar 
+        margin-top: 35px
+    .main-content-left
+        width: 880px
+    .home-sidebar
+        width: 320px
+    .reporting-block-wrapper
+        .folk-tv-item-featured
+            padding-left: 0
+        .video-item-title
+            height: 49px 
+            overflow: hidden
+    .left-menu
+        padding-left: 0
+    .right-menu
+        padding-right: 0
+        height: 41px
+        background: $darkGreen
+        position: relative
+        &:after 
+            content: ""
+            display: block 
+            height: 41px
+            width: 1000%
+            overflow: hidden
+            background: $darkGreen
+            top: 0
+            left: 100%
+            z-index: 1
+            position: absolute
+    .home-block-top
+        padding-top: 0
+    .category-wrapper-list-item-thumbnail
+        padding-right: 0
+    .category-wrapper-list-item-desc
+        height: 72px
+        overflow: hidden
+    .block-news-item 
+        .block-news-item-title
+            height: 40px
+            overflow: hidden
+        .block-news-item-list
+            height: 120px 
+            overflow: hidden
+            li 
+                overflow: hidden
+                height: 55px
+    .block-news-wrapper
+        overflow: hidden
+        height: 350px
+    .block-mostview-wrapper .block-mostview-title
+        height: 40px 
+        overflow: hidden
+    .featured-news-top-item .featured-news-top-item-title
+        height: 33px
+        overflow: hidden
+        line-height: 15px
+    .google-custom-search 
+        position: absolute
+        top: 15px
+        right: 50px
+        width: 250px
+        background: #fff
+        display: none
+    .audio-wrapper
+        min-height: 500px
+    .audio-height 
+        height: 480px
+        overflow: hidden 
+    .player-content-wrapper 
+        display: flex
+    .box-social 
+        margin-top: 11px
+
+@media screen and (min-width: 900px) and (max-width: 1080px)
+    .top-navigation .main-menu li a
+        font-size: 15px!important        
